@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Introduction to Bootstrap</title>
+	<link href="./styles/bootstrap.min.css" rel="stylesheet" />	
+</head>
+		
+<body>
+
+	<!--div class="container-fluid"-->
+	<div class="container">
+		
+		<!-- 
+		
+		Nested column
+		When uses a row class automaticaly 12 columns are added to the div. However, if a new div class row is added inside the prior div, 
+		12 brand new columns are added to the div. And then the same behavior as a Bootstrap content happen.
+		
+		-->
+		
+		<div class="jumbotron"><h4>Week 2</h4></div>
+		
+		<div class="row">
+			<div class="col-xs-4 col-md-6">
+				<h3>Parent</h3>
+				<div class="row">
+					<div class="col-md-6"><h4>First Nest</h4></div>
+					<div class="col-md-6"><h4>Second Nest </h4></div>
+				</div>				
+			</div>
+			
+			<div class="col-md-6">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+		</div>
+		
+		<div class="text-primary">-</div>
+		
+		<!--
+		To align components it is recommended to use the options offset, push and pull
+		offset: is used to centralize the div, giving blank column in both size
+			<div class="col-md-8 col-md-offset-2"> -> this give two blank columns in both sides
+			The math is 12 columns - 8 columns by the size of the div and 4 columns (2 for each offset command)
+			
+		push: align the div to the right side
+		pull: align the div to the left side
+		-->
+		
+		<div class="row">
+			<div class="col-md-2 col-md-offset-2">
+				<h4>Align Center</h4>
+			</div>
+			<div class="col-md-2 col-md-offset-2">
+				<h4>Align Center</h4>
+			</div>
+		</div>
+		
+		<div class="text-primary">-</div>
+		
+		<div class="row">			
+			<div class="col-md-4 col-md-offset-1">
+				<h5>Align column 1</h5>
+				<p>Bootstrap is built with mobile-first in mind. When you use the different commands to control the size and placement of the items being displayed on your grid, it works best when you have the mobile layout defined, and then you use the different push and pull commands to control content placement on larger sizes.</p>
+			</div>
+			<div class="col-md-4 col-md-offset-1">
+				<h5>Align column 2</h5>
+				<p>Bootstrap is built with mobile-first in mind. When you use the different commands to control the size and placement of the items being displayed on your grid, it works best when you have the mobile layout defined, and then you use the different push and pull commands to control content placement on larger sizes.</p>
+			</div>
+		</div>
+		
+		<div class="text-primary">-</div>
+		<h6>When larger screens, the second div must to be on the right side. When small size should be on the right side</h6>
+		
+		<!-- making game position during the re-arrangement of the screen 
+		always design first on smaller devices
+		-->
+		
+		<div class="row">			
+			<!-- the magic is about the command col-md-push-6. When larger screen, push 6 columns and on the smaller devices keeps the position -->
+			<div class="col-xs-12 col-md-6 col-md-push-6">
+				<h5>Priority 1</h5>
+				<p>Small screen on the left - Larger screen on the right</p>
+			</div>
+			<div class="col-xs-12 col-md-6 col-md-pull-6">
+				<h5>Priority 2</h5>
+				<p>Small screen on the right - Larger screen on the left</p>
+			</div>
+		</div>
+		
+		<!-- 
+		Visible and Hidden are two commands on the Bootstrap to play with visibility 
+		Examples
+		visible-md: allows the component to be showned only on medium screen
+		hidden-md: hidden the component only on medium screen
+		-->
+		<br />
+		<div class="text-primary">-</div>
+		
+		<div class="text-primary">Visibility</div>
+		<div>
+			<h4 class="visible-lg">Large</h4>
+			<h4 class="visible-md">Medium</h4>
+			<h4 class="visible-sm">Small</h4>
+			<h4 class="visible-xs">Extra Small</h4>
+			<!-- deprecated -->
+			<h4 class="visible-print">Print</h4>
+		</div>
+		
+		<div class="text-primary">-</div>
+		<div class="text-primary">Invisibility</div>
+		<div>
+			<h4 class="hidden-lg">Large</h4>
+			<h4 class="hidden-md">Medium</h4>
+			<h4 class="hidden-sm">Small</h4>
+			<h4 class="hidden-xs">Extra Small</h4>
+			<!-- deprecated -->
+			<h4 class="hidden-print">Print</h4>
+		</div>
+	</div>
+	
+	<script src="./scripts/bootstrap.min.js"></script>
+	<script src="./scripts/jquery-2.1.4.min.js"></script>
+	
+</body>
+
+</html>

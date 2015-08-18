@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <link href="styles/bootstrap.min.css" rel="stylesheet" />
+   <title>Week 3 - Exercise</title>
+</head>
+<body>
+	
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+					<h4 class="modal-title" id="myModal-label">Are you sure?</h4>
+				</div>
+				
+				<div class="modal-body">
+					<p>Are you sure you wish to submit this album?</p>
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Confirm</button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container">
+				
+		<button type="button" class="col-md-offset-3 col-md-3 btn-success" data-toggle="modal" data-target="#myModal">
+			Open dialog
+		</button>
+	
+	</div>
+ 
+	<!-- content --> 
+   <script src="scripts/jquery-2.1.4.min.js"></script>
+   <script src="scripts/bootstrap.min.js"></script>
+   
+</body>
+</html>

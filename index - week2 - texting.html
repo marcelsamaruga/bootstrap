@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <link href="styles/bootstrap.min.css" rel="stylesheet" />
+   <style>
+     body {
+       padding-top: 70px;
+     }
+   </style>
+   <title>Navbar Sample</title>
+</head>
+<body>
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<div class="col-md-6">		
+				<h2>Tabs</h2>
+				<!-- Tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active"><a href="#tabs-first" role="tab" data-toggle="tab">First</a></li>
+					<li><a href="#tabs-second" role="tab" data-toggle="tab">Second</a></li>
+				</ul>
+			 
+				<!-- Tab Content -->
+				<div class="tab-content">
+					<div class="active tab-pane fade in" id="tabs-first">
+						<h2>First</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+					</div>
+					<div class="tab-pane fade" id="tabs-second">
+						<h2>Second</h2>
+						<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
+				</div>				
+			</div>
+			
+			
+			<div class="col-md-6">
+				<h2>Scrollspy</h2>
+				<div style="position:relative;">
+					<!-- Navigation -->
+					<nav class="navbar navbar-default navbar-static" role="navigation" id="navbar-spy">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#scroll-first">First</a></li>
+							<li><a href="#scroll-second">Second</a></li>
+						</ul>
+					</nav>
+				 
+					<!-- Content -->
+					<div data-target="#navbar-spy" data-spy="scroll" style="height:150px; overflow-y:scroll; position:relative;">
+						<div id="scroll-first">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Pork chop bresaola corned beef strip steak, venison porchetta prosciutto. Picanha ball tip filet mignon, short ribs ham salami ham hock pork chop brisket strip steak. Tri-tip leberkas short ribs, alcatra boudin chicken jowl prosciutto pork chop tongue pastrami. Pork loin short ribs fatback frankfurter alcatra. Frankfurter biltong short ribs tongue prosciutto jowl alcatra ground round capicola spare ribs leberkas cupim pancetta.</p>
+						</div>
+						<div id="scroll-second">
+							<p>Bacon ipsum dolor amet turkey prosciutto shoulder, flank fatback alcatra pork belly. Pork belly short loin chuck tongue shank tail corned beef swine cupim turkey prosciutto porchetta jerky pastrami boudin. Short loin porchetta pork belly boudin tail. Capicola strip steak tenderloin ribeye tongue pork chop ground round hamburger corned beef. Doner meatloaf kevin, tail cupim beef ribs porchetta. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<br />
+		<h2>Accordion</h2>
+		<div class="panel-group" id="accordion-sample">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion-sample" href="#accordion-sample-one">
+							Heading One
+						</a>
+					</h4>
+				</div>
+				
+				<div id="accordion-sample-one" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<p>Bacon ipsum dolor amet turkey prosciutto shoulder, flank fatback alcatra pork belly. </p>
+					</div>
+				</div>
+		   </div>
+		   
+		   <div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion-sample" href="#accordion-sample-two">
+							Heading Two
+						</a>
+					</h4>
+				</div>
+		   
+				<div id="accordion-sample-two" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>Pork belly short loin chuck tongue shank tail corned beef swine cupim turkey prosciutto porchetta jerky pastrami boudin. Short loin porchetta pork belly boudin tail. Capicola strip steak tenderloin ribeye tongue pork chop ground round hamburger corned beef. Doner meatloaf kevin, tail cupim beef ribs porchetta. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy textLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br />
+		<h2>Carousel</h2>
+		
+		<div class="row">
+			<div class="col-md-4">
+				<div id="carousel-demo" class="carousel slide" data-ride="carousel">
+					
+					<!-- carousel itens -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-demo" data-slide-to="1"></li>
+						<li data-target="#carousel-demo" data-slide-to="2"></li>
+					</ol>
+					
+					<div class="carousel-inner">
+						<!-- image or ads 1 -->
+						<div class="item active">
+							<img alt="First slide" src="images/1.png" />
+							<div class="carousel-caption">
+								<br><br><br><br><br><br>
+								<h3>Caption Heading One</h3>
+								<p>This is the image 1</p>
+							</div>
+						</div>
+					 
+						<!-- image or ads 2 -->
+						<div class="item">
+							<img alt="Second slide" src="images/2.png" />
+							<div class="carousel-caption">
+								<h3>Caption Heading Two</h3>
+								<p>This is the image 2</p>
+							</div>
+						</div>
+						
+						<!-- image or ads 3 -->
+						<div class="item">
+							<img alt="Third slide" src="images/3.png" />
+							<div class="carousel-caption">
+								<h3>Caption Heading Three</h3>
+								<p>This is the image 3</p>
+							</div>
+						</div>
+						
+					</div>
+					
+					<!-- navigation -->				
+					<a class="left carousel-control" href="#carousel-demo" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-demo" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	
+	</div>
+ 
+	<!-- content --> 
+   <script src="scripts/jquery-2.1.4.min.js"></script>
+   <script src="scripts/bootstrap.min.js"></script>
+   
+</body>
+</html>

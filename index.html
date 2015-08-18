@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Introduction to Bootstrap</title>
+	<link href="./styles/bootstrap.min.css" rel="stylesheet" />	
+</head>
+		
+<body>
+
+	<!--div class="container-fluid"-->
+	<div class="container">
+		
+		<!-- highlight -->
+		<div class="jumbotron">
+			<h2>Hello, Bootstrap!</h2>
+		</div>
+		
+		<!-- 
+		
+		Extra small devices - e.g. phones(< 768 px)
+		Small devices - e.g. tablets(≥ 768 px)
+		Medium devices - e.g. laptops(≥ 992 px)
+		Large devices - e.g. desktops(≥ 1200 px)
+		
+		xs = works in extra small, small, medium and large sizes
+		sm = works in small, medium and large sizes
+		md = works in medium and large sizes
+		lg = works in large sizes
+		
+		
+		col-md-4 would indicate 4 columns for medium and large screens
+		the component (usually div) works in medium and large size without change position. If the screen is small or extra small, the div wind up and the next
+		one will go to the next row (carriage return)
+		
+		the class property can be override eg
+		<div>
+			<div class='col-xs-4 col-sm-6 col-md-4'>Content</div>
+			<div class='col-xs-4 col-sm-6 col-md-4'>Content</div>
+			<div class='col-xs-4 col-sm-6 col-md-4'>Content</div>
+		</div>
+		this mean: when is in extra small screen size compress the div. When in small screen size divide by 2 and in mediu size divide by 3 coluns
+		if the number of the xs is 2
+		
+		-->
+		
+		<div class="row">
+			<div class="col-md-4"><h3>1</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+			<div class="col-md-4"><h3>2</h3>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+			<div class="col-md-4"><h3>3</h3>but also the leap into electronic typesetting, remaining essentially unchanged</div>
+		</div>
+		
+		<div class="text-primary">-</div>
+		
+		<div class="row">
+			<div class="col-xs-4 col-md-4"><h3>1</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+			<div class="col-xs-4 col-md-4"><h3>2</h3>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+			<div class="col-xs-4 col-md-4"><h3>3</h3>but also the leap into electronic typesetting, remaining essentially unchanged</div>
+		</div>
+		
+		<div class="text-primary">-</div>
+		
+		<!-- the third div inside class row exceded the 12 columns. So the behavior is to move to the next row. In this caso, occupied 12 column -->
+		<div class="row">
+			<div class="col-xs-4 col-md-4"><h3>1</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+			<div class="col-xs-4 col-md-4"><h3>2</h3>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+			<div class="col-xs-12 col-md-4"><h3>3</h3>but also the leap into electronic typesetting, remaining essentially unchanged</div>
+		</div>
+		
+		<div class="text-primary">-</div>
+		
+		<!-- the third div inside class row exceded the 12 columns. So the behavior is to move to the next row. In this caso, occupied 12 column -->
+		<div class="row">
+			<div class="col-xs-4 col-md-3"><h3>1</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+			<div class="col-xs-4 col-md-3"><h3>2</h3>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+			<div class="col-xs-12 col-md-3"><h3>3</h3>but also the leap into electronic typesetting, remaining essentially unchanged</div>
+			<!-- this class will exceded 12 columns again, so move to the next row -->
+			<div class="col-xs-12 col-md-3"><h3>3</h3>but also the leap into electronic typesetting, remaining essentially unchanged</div>
+		</div>
+		
+		<div class="text-primary">-</div>
+		
+		<!-- the third div inside class row exceded the 12 columns. So the behavior is to move to the next row. In this caso, occupied 12 column -->
+		<div class="row">
+			<div class="col-xs-4 col-sm-6 col-md-4"><h3>1</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+			<div class="col-xs-4 col-sm-6 col-md-4"><h3>2</h3>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+			<div class="col-xs-4 col-sm-6 col-md-4"><h3>3</h3>but also the leap into electronic typesetting, remaining essentially unchanged</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-4 col-sm-6 col-md-4">
+				<h3>1</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+			</div>
+		
+		<div class="col-md-12">
+			<h4>Hello, Bootstrap!1</h4>
+		</div>
+		
+		<div class="col-md-8">
+			<h4>Hello, Bootstrap!2</h2>
+		</div>
+		
+		<div class="col-md-4">
+			<h4>Hello, Bootstrap!3</h4>
+		</div>
+		
+		<div class="col-md-2">
+			<h4>Hello, Bootstrap!4</h4>
+		</div>
+		
+	</div>
+	
+	<script src="./scripts/bootstrap.min.js"></script>
+	<script src="./scripts/jquery-2.1.4.min.js"></script>
+	
+</body>
+
+</html>
